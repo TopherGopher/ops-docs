@@ -114,11 +114,12 @@ staging:
 +  db_host: db1.staging
 ```
 
-Remove the `db_port` value from the production section
+Remove the `db_port` and `custom_port` lines from the production section
 
 ```
 production:
 -  db_port: "3307"
+-  custom_port: enabled
 ```
 
 Replace all instances of `.nmdev.us` with `.drud.io`. This should be in the `url` and the `server_aliases` fields. *_Note:_ If the production URL is not set to a `nmdev.us` URL, then leave it alone.
